@@ -443,14 +443,6 @@ button {
 }
 
 /* -----------------------Specifics----------------------- */
-.specifics {
-  padding-bottom: 94px;
-}
-
-.specifics-list {
-  display: flex;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -464,7 +456,15 @@ button {
   overflow: hidden;
 }
 
-.specifics-icon {
+.specifics {
+  padding-bottom: 94px;
+}
+
+.specifics__list {
+  display: flex;
+}
+
+.specifics__icon {
   display: flex;
   width: 270px;
   height: 120px;
@@ -475,20 +475,20 @@ button {
   background-color: var(--second-background-color);
 }
 
-.svg-specifics {
+.specifics__svg {
   width: 70px;
   height: 70px;
 }
 
-.specifics-item + .specifics-item {
+.specifics__item + .specifics__item {
   margin-left: 30px;
 }
 
-.specifics-item {
+.specifics__item {
   width: 270px;
 }
 
-.specifics-title {
+.specifics__title {
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
@@ -497,7 +497,7 @@ button {
   margin-bottom: 10px;
 }
 
-.specifics-text {
+.specifics__text {
   line-height: 1.71;
 }
 
@@ -506,15 +506,11 @@ button {
   padding-top: 0px;
   padding-bottom: 94px;
 }
-.about-list {
+.about__list {
   display: flex;
 }
 
-.about-item + .about-item {
-  margin-left: 30px;
-}
-
-.about-title {
+.about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -524,11 +520,15 @@ button {
   margin-bottom: 50px;
 }
 
-.about-item {
+.about__item {
   position: relative;
 }
 
-.works-box {
+.about__item + .about__item {
+  margin-left: 30px;
+}
+
+.about__works-box {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -539,7 +539,7 @@ button {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.works-text {
+.about__works-text {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
@@ -551,7 +551,7 @@ button {
   background-color: var(--second-background-color);
 }
 
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -560,7 +560,7 @@ button {
   margin-bottom: 50px;
 }
 
-.team-item {
+.team__item {
   width: 270px;
   background-color: var(--body-background-color);
   border-radius: 0px 0px 4px 4px;
@@ -569,15 +569,15 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list {
+.team__list {
   display: flex;
 }
 
-.img-team {
+.team__img {
   margin-bottom: 30px;
 }
 
-.team-name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -586,7 +586,7 @@ button {
   margin-bottom: 10px;
 }
 
-.team-text {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
